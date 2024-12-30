@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chessweeper Tutorial</title>
+    <style>
+        @import url(https://themes.googleusercontent.com/fonts/css?kit=2BybOwZ-cHgY_RFIFci4ug);
+        body {
+            font-family: "Nunito";
+            margin: 2em auto;
+            max-width: 800px;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f8f8;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #4CAF50; /* A vibrant green */
+            text-align: center;
+            border-bottom: 2px solid #4CAF50;
+            padding-bottom: 0.5em;
+            margin-bottom: 1em;
+        }
+
+        h2 {
+            color: #007BFF; /* A friendly blue */
+            margin-top: 1.5em;
+        }
+
+        p {
+            margin-bottom: 1em;
+        }
+
+        img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+            margin: 1em auto;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        .step {
+            background-color: #fff;
+            padding: 1em;
+            margin-bottom: 1.5em;
+            border-radius: 6px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+        }
+
+        .step h3 {
+            color: #FFC107; /* A bright yellow/amber */
+            margin-top: 0;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 0.3em;
+        }
+
+        .key-concept {
+            font-weight: bold;
+            color: #007BFF;
+        }
+
+        .important {
+            background-color: #ffe0b2; /* A light orange for emphasis */
+            padding: 0.5em;
+            border-radius: 4px;
+            margin-bottom: 1em;
+        }
+
+        .button-explanation {
+            font-style: italic;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to Chessweeper!</h1>
+
+    <p>This tutorial will guide you through the basics of playing Chessweeper. Let's get started!</p>
+
+    <div class="step">
+        <h3>Setting Up the Board</h3>
+        <p>First, you'll need to arrange your chess pieces on the board. Drag and drop the pieces to your desired starting positions. For this tutorial, we'll use a standard chess setup as an example.</p>
+        <img src="images/image4.png" alt="Setting up the chess board">
+        <p>Once you're happy with your setup, click the <span class="key-concept">"End Turn"</span> button to confirm your initial piece placement.</p>
+    </div>
+
+    <div class="step">
+        <h3>Starting the Game</h3>
+        <p>After setting up, the game begins! If you're playing as Black, you might need to wait briefly for White to make their first move.</p>
+    </div>
+
+    <div class="step">
+        <h3>Making Moves</h3>
+        <p>During your turn, you can move one piece. To do this, simply drag the piece you want to move to a valid destination square.</p>
+        <img src="images/image9.png" alt="Dragging a chess piece">
+    </div>
+
+    <div class="step">
+        <h3>Hidden tiles</h3>
+        <p>Unlike standard chess, your opponent's pieces are initially hidden from view. However, you can get clues about their locations:</p>
+        <ul>
+            <li><span class="key-concept">Radar:</span> Hover your mouse over your own pieces. You'll see a number indicating how many enemy pieces are within their moving range.</li>
+            <li><span class="key-concept">King's Location:</span> The location of the opponent's King is always visible, as capturing it is the primary objective.</li>
+        </ul>
+        <img src="images/image3.png" alt="Hovering over a piece to see enemy proximity">
+        <p>In the image above, the highlighted squares represent the radar of the selected piece. The green number shows how many enemy pieces are under those highlighted squares.</p>
+    </div>
+
+    <div class="step">
+        <h3>Claiming Tiles</h3>
+        <p>You can click on unoccupied, hidden tiles to claim them. However, be cautious! If an enemy piece is hiding beneath a tile you click on, you will lose.</p>
+        <img src="images/image2.png" alt="Clicking on a tile">
+        <img src="images/image6.png" alt="Losing after clicking on an occupied tile">
+    </div>
+
+    <div class="step">
+        <h3>Movement Modes: Attack vs. Normal</h3>
+        <p>When moving a piece onto a hidden square, you have two distinct modes, controlled by buttons at the top of the screen:</p>
+        <ul>
+            <li><span class="key-concept">Attack Mode (Knife Icon):</span> <span class="button-explanation">Intended for capturing potentially hidden enemies.</span></li>
+            <li><span class="key-concept">Normal Mode (Magnifying Glass Icon):</span> <span class="button-explanation">Used for safely exploring and claiming tiles.</span></li>
+        </ul>
+        <img src="images/image2.png" alt="Attack and Normal Mode buttons">
+    </div>
+
+    <div class="step">
+        <h3>Understanding Movement Modes</h3>
+        <div class="important">
+            <p><span class="key-concept">Normal Mode:</span> If you move onto a hidden tile and it's empty, you claim the tile and move there safely. If an enemy piece is present, you lose the game.</p>
+        </div>
+        <div class="important">
+            <p><span class="key-concept">Attack Mode:</span> If you move onto a hidden tile and it contains an enemy piece, you capture that piece, claim the tile, and move there. However, if the tile is empty, you lose the piece you moved.</p>
+        </div>
+        <img src="images/image8.png" alt="Moving in Normal Mode">
+        <img src="images/image1.png" alt="Moving in Attack Mode">
+    </div>
+
+    <div class="step">
+        <h3>Winning the Game</h3>
+        <p>The ultimate goal of Chessweeper is to capture the opponent's King. Strategically use your movement and tile-claiming abilities to locate and capture it!</p>
+        <img src="images/image7.png" alt="Capturing the King">
+        <img src="images/image5.png" alt="Victory screen">
+    </div>
+
+    <p>Good luck and have fun playing Chessweeper!</p>
+</body>
+</html>
